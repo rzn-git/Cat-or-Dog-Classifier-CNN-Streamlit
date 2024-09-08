@@ -37,7 +37,9 @@ if uploaded_file is not None:
     # Interpret the result and display it
     if prediction[0] > 0.5:
         st.write(f"**Prediction:** Dog")
-        st.write(f"**Confidence:** {prediction[0][0]*100:.2f}%")
+        st.write(f"**Confidence:** {prediction[0][0]*100:.0f}%")
     else:
         st.write(f"**Prediction:** Cat")
-        st.write(f"**Confidence:** {(1 - prediction[0][0])*100:.2f}%")
+        st.write(f"**Confidence:** {(1 - prediction[0][0])*100:.0f}%")
+
+
