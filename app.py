@@ -16,7 +16,7 @@ def preprocess_image(img):
     return img_array
 
 # Streamlit app
-st.title("🐾 Cat or Dog Classifier")
+st.title("🐾 Cat or Dog Classifier using CNN")
 
 st.write("Upload an image to classify 🐱 or 🐶. image format has to be jpg, jpeg or png")
 
